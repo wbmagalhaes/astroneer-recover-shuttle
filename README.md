@@ -7,7 +7,7 @@ On top of decoding, it also **fixes a shuttle stuck in orbit**: it moves the shu
 landing pad, clears the lost/orbit state, and resets `ExitSuppressionCount` so you can exit it
 again. Everything runs in your browser, so your save never leaves your device.
 
-**Use it:** [PUBLISHED_PAGE_URL](PUBLISHED_PAGE_URL)
+**Use it here:** https://wbmagalhaes.github.io/astroneer-recover-shuttle/
 
 ## Build Locally
 
