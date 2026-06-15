@@ -4,7 +4,16 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Astroneer: FORCE-LAND SHUTTLES</title>
+  <title>Astroneer: Recover a Shuttle Stuck in Orbit (Lost Shuttle Fix)</title>
+  <meta name="description"
+    content="Browser tool to fix an Astroneer shuttle stuck in orbit or lost in multiplayer. Brings a lost shuttle back down onto a landing pad and makes it exitable again, by editing your .savegame locally." />
+  <meta name="keywords"
+    content="astroneer, shuttle stuck in orbit, lost shuttle, recover shuttle, shuttle won't land, can't recall shuttle, astroneer multiplayer bug, shuttle disappeared, save editor, savegame fix, stuck in shuttle, can't exit shuttle" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Astroneer: Recover a Shuttle Stuck in Orbit" />
+  <meta property="og:description"
+    content="Lost a shuttle in orbit (often after a multiplayer lag/disconnect)? This browser tool brings it back onto a landing pad and makes it exitable again" />
+  <meta name="twitter:card" content="summary" />
   <style>
     :root {
       --bg: #0b0e14;
@@ -372,7 +381,8 @@
 <body>
   <header>
     <h1>ASTRONEER: <span>FORCE-LAND SHUTTLE</span></h1>
-    <div class="sub">Recover a shuttle stuck in orbit onto a landing pad.</div>
+    <div class="sub">This is a fix for an Astroneer bug where a shuttle gets stuck in orbit and you can't bring it
+      back. It happens in multiplayer/co-op after a lag spike or a player disconnecting while in orbit.</div>
   </header>
   <main>
     <div class="hint">The fix repositions the shuttle onto the pad then clears lost/orbit state to landed state and sets
@@ -409,7 +419,8 @@
         </div>
         <div class="panel">
           <h2>Landing pads
-            <label class="filter"><input type="checkbox" id="hidePregen" checked autocomplete="off"> hide pre-generated</label>
+            <label class="filter"><input type="checkbox" id="hidePregen" checked autocomplete="off"> hide
+              pre-generated</label>
           </h2>
           <div id="pads" class="list"></div>
         </div>

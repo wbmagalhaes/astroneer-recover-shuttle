@@ -9,6 +9,15 @@ again. Everything runs in your browser, so your save never leaves your device.
 
 **Use it here:** https://wbmagalhaes.github.io/astroneer-recover-shuttle/
 
+## Does this describe your bug?
+
+This is a fix for an Astroneer bug where a **shuttle gets stuck / lost in orbit** and you can't bring
+it back (most often in **multiplayer/co-op** after a lag spike or a player disconnecting
+mid-flight).
+
+> ⚠️ **Back up your save first** and keep the original: this was tested on my own save and my own
+> specific bug, so there's no guarantee it works for every save. Use at your own risk.
+
 ## Build Locally
 
 ```bash

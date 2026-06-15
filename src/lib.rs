@@ -560,8 +560,16 @@ fn prettify(short: &str) -> String {
 // items slotted on a vehicle (thrusters, seats, storage...) read from its SlotsComponent graph
 fn slot_items(save: &Save, ship_i: usize) -> Vec<String> {
     const ALLOW: [&str; 10] = [
-        "Thruster", "Seat", "Storage", "Canister", "Battery", "Generator", "Oxygen", "Drill",
-        "Crane", "Paver",
+        "Thruster",
+        "Seat",
+        "Storage",
+        "Canister",
+        "Battery",
+        "Generator",
+        "Oxygen",
+        "Drill",
+        "Crane",
+        "Paver",
     ];
     let mut out = Vec::new();
     let mut seen = Vec::new();
@@ -644,7 +652,10 @@ pub fn decode_json(blob: &[u8]) -> String {
     let host = match save.host_pawn.and_then(|p| save.trans(p as usize)) {
         Some(p) => format!(
             "{{\"pos\":[{:.0},{:.0},{:.0}],\"planet\":{}}}",
-            p[0], p[1], p[2], jstr(&planet_name(&save, p))
+            p[0],
+            p[1],
+            p[2],
+            jstr(&planet_name(&save, p))
         ),
         None => "null".into(),
     };
